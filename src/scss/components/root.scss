@@ -1,0 +1,16 @@
+.root {
+    @include flex(column,nowrap,center,center,center);
+    background-color: $colorCararra;
+    &_nav {
+
+    }
+    &_header {
+
+    }
+    &_main {
+
+    }
+    &_footer {
+
+    }
+}
