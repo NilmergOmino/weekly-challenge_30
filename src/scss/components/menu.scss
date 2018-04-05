@@ -1,0 +1,37 @@
+.menu {
+    background-color: $colorCararra;
+    display: none;
+    &.-toggle {
+        @include flex(column,nowrap,center,center,center);
+        opacity: 0;
+        animation: fade-in;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+    }
+    &_item {
+        font-size: 0.8em;
+        margin: 1.5em 2em;
+    }
+    &_item.-logo {
+        font-size: 1.5em;
+    }
+    &_link {
+        text-decoration: none;
+        letter-spacing: 0.5em;
+        color: $colorMineShalf;
+    }
+    &_link.-logo {
+
+    }
+    @include screen(desktop) {
+        @include flex(row,nowrap,center,center,center);
+        background-color: transparent;
+        &.-toggle {
+            @include flex(row,nowrap,center,center,center);
+        }
+        &_item {
+            font-size: 0.6em;
+            margin: 0 2em;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.portfolio {
+    @include flex(column, nowrap,center,center,center);
+    &_box.-content {
+        @include flex(column,nowrap,center,center,center);
+        width: 90%;
+        margin: 50px 0;
+        background-color: white;
+        padding: 3em 2em;
+    }
+    &_heading {
+        color: $colorMineShalfLighten25;
+        font-weight: 400;
+        margin-bottom: 0.5em;
+    }
+    &_paragraph {
+        margin: 4em 0;
+        text-align: center;
+    }
+    &_button {
+        border: 2px solid $colorMineShalf;
+        transition: 0.3s;
+    }
+    &_button:hover,
+    &_button:focus {
+        background-color: $colorCararra;
+    }
+    &_gallery {
+        width: 100%;
+    }
+    @include screen(tablet) {
+        &_box.-content {
+            width: 70%;
+            margin: 140px 0;
+            padding: 4em 5em;
+        }
+    }
+    @include screen(desktop) {
+        &_paragraph {
+            margin: 4em 0;
+            text-align: left;
+        }
+        &_box.-content {
+            width: 70%;
+            max-width: 1100px;
+            margin: 180px 0;
+            padding: 5em 11em;
+        }
+    }
+}

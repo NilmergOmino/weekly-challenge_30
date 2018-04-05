@@ -4,63 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/style.css">
     <title>Zadanie 30</title>
 </head>
 <body class="root">
     <header class="root_header header">
-        <nav class="root_nav nav">
-            <a href="" class="nav_logo">monospeak</a>
-            <button class="nav_trigger trigger" aria-label="toggle menu">
+        <nav class="root_nav nav" id="nav">
+            <button class="nav_trigger trigger" aria-label="toggle menu" id="trigger-menu">
                 <span class="trigger_line -first"></span>
                 <span class="trigger_line -second"></span>
                 <span class="trigger_line -third"></span>
             </button>
-            <ul class="nav_menu menu">
-                <li class="menu_item"><a href="#portfolio" class="menu_link _text-caps">portfolio</a></li>
-                <li class="menu_item"><a href="#about" class="menu_link _text-caps">about</a></li>
-                <li class="menu_item"><a href="#articles" class="menu_link _text-caps">articles</a></li>
-                <li class="menu_item"><a href="#contact" class="menu_link _text-caps">contact</a></li>
+            <ul class="nav_menu menu _list-box" id="menu">
+                <li class="menu_item"><a href="#portfolio" class="menu_link _text-caps _js-anchor">portfolio</a></li>
+                <li class="menu_item"><a href="#about" class="menu_link _text-caps _js-anchor">about</a></li>
+                <li class="menu_item -logo"><a href="" class="menu_link -logo _text-caps">moonspeak</a></li>
+                <li class="menu_item"><a href="#articles" class="menu_link _text-caps _js-anchor">articles</a></li>
+                <li class="menu_item"><a href="#contact" class="menu_link _text-caps _js-anchor">contact</a></li>
             </ul>
         </nav>
-        <h1 class="header_heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</h1>
+        <h1 class="header_heading _text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</h1>
     </header>
     <main class="root_main main">
         <article class="main_portfolio portfolio" id="portfolio">
-            <div class="portfolio_box">
-                <h2 class="portfolio_heading _text-caps">Aarhus Lejerboliger</h2>
+            <div class="portfolio_box -content">
+                <h2 class="portfolio_heading _text-caps _text-center">Aarhus Lejerboliger</h2>
                 <p class="portfolio_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <button class="portfolio_button _button _text-caps">view project</button>
+                <button class="portfolio_button _button _text-caps _text-bold">view project</button>
             </div>
             <div class="portfolio_gallery gallery">
                 <figure class="gallery_item">
-                    <img src="" alt="" class="gallery_image">
+                    <img src="dist/assets/img/gallery-1.png" alt="" class="gallery_image">
                     <figcaption class="gallery_text _text-caps">Lorem ipsum</figcaption>
                 </figure>
                 <figure class="gallery_item">
-                    <img src="" alt="" class="gallery_image">
+                    <img src="dist/assets/img/gallery-2.png" alt="" class="gallery_image">
                     <figcaption class="gallery_text _text-caps">Lorem ipsum</figcaption>
                 </figure>
                 <figure class="gallery_item">
-                    <img src="" alt="" class="gallery_image">
+                    <img src="dist/assets/img/gallery-3.png" alt="" class="gallery_image">
                     <figcaption class="gallery_text _text-caps">Lorem ipsum</figcaption>
                 </figure>
                 <figure class="gallery_item">
-                    <img src="" alt="" class="gallery_image">
+                    <img src="dist/assets/img/gallery-4.png" alt="" class="gallery_image">
                     <figcaption class="gallery_text _text-caps">Lorem ipsum</figcaption>
                 </figure>
                 <figure class="gallery_item">
-                    <img src="" alt="" class="gallery_image">
+                    <img src="dist/assets/img/gallery-5.png" alt="" class="gallery_image">
                     <figcaption class="gallery_text _text-caps">Lorem ipsum</figcaption>
                 </figure>
                 <figure class="gallery_item">
-                    <img src="" alt="" class="gallery_image">
+                    <img src="dist/assets/img/gallery-6.png" alt="" class="gallery_image">
                     <figcaption class="gallery_text _text-caps">Lorem ipsum</figcaption>
                 </figure>
             </div>
         </article>
         <article class="main_about about" id="about">
-            <h2 class="about_heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+            <h2 class="about_heading _text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
             <div class="about_box -container">
                 <div class="about_decoration"></div>
                 <div class="about_box -content">

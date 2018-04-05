@@ -36,3 +36,6 @@ p  { line-height: 1.5em;}
 button, input, optgroup, select, textarea {
     font-family: $font-main;
 }
+nav,main,aside,article,section,footer,header,figure,div {
+    box-sizing: border-box;
+}

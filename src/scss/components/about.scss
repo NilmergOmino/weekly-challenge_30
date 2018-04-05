@@ -1,0 +1,39 @@
+.about {
+    @include flex(column,nowrap,center,center,center);
+    &_heading {
+        font-weight: 400;
+        margin: 100px 0;
+        width: 90%;
+    }
+    &_box.-container{
+        @include flex(row,wrap,center,stretch,center);
+        width: 100%;
+    }
+    &_decoration {
+        background-image: url('../assets/decoration-about.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+    }
+    &_box.-content {
+        width: 50%;
+        @include flex(column,nowrap,flex-start,center,center);
+    }
+    &_aboutItem {
+
+    }
+    @include screen(tablet) {
+        &_heading {
+            font-weight: 400;
+            margin: 150px 0;
+            width: 70%;
+        }
+    }
+    @include screen(desktop) {
+        &_heading {
+            font-weight: 400;
+            margin: 220px 0;
+            width: 60%;
+        }
+    }
+}
