@@ -1,0 +1,47 @@
+.articleItem {
+    @include flex(column,nowrap,center,center,center);
+    background-color: white;
+    padding: 3em 2em;
+    &_heading {
+        margin: 0;
+        font-size: 1.2em;
+    }
+    &_paragraph {
+        font-size: 0.9em;
+        margin: 2em 0;
+    }
+    &_link {
+        margin-top: 1em;
+        color: $colorDodgerBlue;
+        transition: 0.3s;
+        text-decoration: none;
+        position: relative;
+        display: block;
+        padding: 0.1em 2px;
+        overflow: hidden;
+    }
+    &_link:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        transition: 0.3s;
+        background-color: $colorDodgerBlue;
+    }
+    &_link:hover,
+    &_link:focus {
+        color: darken($colorDodgerBlue,50%);
+    }
+    &_link:hover:before,
+    &_link:focus:before {
+        height: 100%;
+        opacity: 0.5;
+    }
+
+    @include screen(tablet) {
+        padding: 3em 4em;
+    }
+}

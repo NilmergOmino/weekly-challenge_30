@@ -13,11 +13,13 @@ $(document).on('scroll', function(){
 
 $('#trigger-menu').on('click', function(){
     $('#menu').toggleClass('-toggle');
+    $('#trigger-menu').toggleClass('-active');
 })
 
 $(document).ready(function(){
     $('._js-anchor').on('click', function(event){
         $('#menu').removeClass('-toggle');
+        $('#trigger-menu').toggleClass('-active');
         let target = this.hash.slice(1),
             hash = this.hash,
             targetTop = $('#'+target).offset().top;

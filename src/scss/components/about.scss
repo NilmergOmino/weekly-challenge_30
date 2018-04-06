@@ -4,6 +4,7 @@
         font-weight: 400;
         margin: 100px 0;
         width: 90%;
+        font-size: 1.8em;
     }
     &_box.-container{
         @include flex(row,wrap,center,stretch,center);
@@ -12,15 +13,29 @@
     &_decoration {
         background-image: url('../assets/decoration-about.png');
         background-repeat: no-repeat;
-        background-size: cover;
-        width: 50%;
+        background-size: auto 100%;
+        width: 30%;
+    }
+    &_decoration:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        background-color: rgba(black,0.2);
     }
     &_box.-content {
-        width: 50%;
-        @include flex(column,nowrap,flex-start,center,center);
+        @include flex(column,nowrap,flex-start,flex-start,flex-start);
+        width: 70%;
+        padding: 5em 3em;
+        background-color: white;
+        position: relative;
     }
     &_aboutItem {
-
+        width: 90%;
+        max-width: 200px;
     }
     @include screen(tablet) {
         &_heading {
@@ -28,12 +43,36 @@
             margin: 150px 0;
             width: 70%;
         }
+        &_decoration {
+            width: 40%;
+        }
+        &_box.-content {
+            @include flex(column,nowrap,flex-start,flex-start,flex-start);
+            width: 60%;
+            padding: 5em 5em;
+        }
+        &_aboutItem {
+            width: 70%;
+            max-width: 270px;
+        }
     }
     @include screen(desktop) {
         &_heading {
             font-weight: 400;
             margin: 220px 0;
             width: 60%;
+            max-width: 760px;
+        }
+        &_decoration {
+            width: 50%;
+            background-size: cover;
+        }
+        &_box.-content {
+            width: 50%;
+        }
+        &_aboutItem {
+            width: 50%;
+            max-width: 350px;
         }
     }
 }

@@ -1,0 +1,17 @@
+.socials {
+    @include flex(row,nowrap,center,center,center);
+
+    &_item {
+        margin: 0 .5em;
+    }
+    &_link {
+        text-decoration: none;
+        color: $colorMineShalfLighten8;
+        font-size: 1.2em;
+        transition: .3s;
+    }
+    &_link:hover,
+    &_link:focus {
+        color: $colorMineShalfLighten25;
+    }
+}

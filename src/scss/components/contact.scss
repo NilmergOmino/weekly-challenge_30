@@ -1,0 +1,39 @@
+.contact {
+    @include flex(column,nowrap,center,center,center);
+    color: white;
+    background-color: $colorMineShalfLighten8;
+    padding-bottom: 2em;
+    &_box.-content {
+        @include flex(column,nowrap,center,flex-start,center);
+        width: 70%;
+        padding: 2em 0;
+    }
+    &_paragraph {
+        margin: 1em 0;
+        max-width: 100%;
+    }
+    &_map {
+        width: 70%;
+        height: auto;
+    }
+    @include screen(tablet) {
+        @include flex(row,nowrap,center,center,center);
+        padding-bottom: 0;
+        &_paragraph {
+            max-width: 80%;
+        }
+        &_box.-content {
+            @include flex(column,nowrap,center,flex-start,center);
+            width: 35%;
+        }
+        &_map {
+            width: 35%;
+            height: auto;
+        }
+    }
+    @include screen(desktop) {
+        &_paragraph {
+            max-width: 65%;
+        }
+    }
+}

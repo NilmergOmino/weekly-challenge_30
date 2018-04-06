@@ -5,9 +5,11 @@
 
     &_trigger {
         position: fixed;
-        top: 20px;
-        right: 20px;
+        top: 25px;
+        right: 25px;
         z-index: 60;
+        width: 25px;
+        height: 25px;
     }
     &_menu {
         position: fixed;

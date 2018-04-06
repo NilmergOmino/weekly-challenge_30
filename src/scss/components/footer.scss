@@ -1,0 +1,22 @@
+.footer {
+    @include flex(column, nowrap,center,center,center);
+    background-color: $colorCararra;
+    padding: 3em 2em;
+
+    &_socials {
+        margin-bottom: 1.5em;
+    }
+    &_copyright {
+        margin: 0;
+        font-size: 1.2em;
+        color: $colorMineShalfLighten8;
+    }
+
+    @include screen(tablet) {
+        @include flex(row, nowrap,space-between,center,center);
+        padding: 3em 15%;
+        &_socials {
+            margin-bottom: 0;
+        }
+    }
+}
