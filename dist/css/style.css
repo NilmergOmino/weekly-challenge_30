@@ -898,9 +898,31 @@ nav, main, aside, article, section, footer, header, figure, div {
     text-align: center; }
   .portfolio_button {
     border: 2px solid #222222;
-    transition: 0.3s; }
+    transition: 0.3s;
+    position: relative; }
+  .portfolio_button:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #222222;
+    transition: 0.3s;
+    z-index: 5;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center; }
+  .portfolio_buttonText {
+    position: relative;
+    z-index: 10; }
   .portfolio_button:hover, .portfolio_button:focus {
-    background-color: #efeee9; }
+    color: rgba(255, 255, 255, 0.9); }
+  .portfolio_button:hover:before, .portfolio_button:focus:before {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1); }
   .portfolio_gallery {
     width: 100%; }
   @media only screen and (min-width: 768px) {
@@ -983,15 +1005,17 @@ nav, main, aside, article, section, footer, header, figure, div {
     top: 80%; }
   .trigger.-active .trigger_line.-first {
     top: 40%;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg); }
+    -webkit-transform: rotate(45deg) scaleX(1.4);
+            transform: rotate(45deg) scaleX(1.4); }
   .trigger.-active .trigger_line.-second {
     top: 40%;
     opacity: 0; }
   .trigger.-active .trigger_line.-third {
     top: 40%;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg); }
+    -webkit-transform: rotate(-45deg) scaleX(1.4);
+            transform: rotate(-45deg) scaleX(1.4); }
+  .trigger:hover, .trigger:focus {
+    outline: none; }
 
 .header {
   display: flex;

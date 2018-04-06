@@ -67,9 +67,9 @@ module.exports = {
     },
 
     plugins: [
-        new UglifyJsPlugin({
-            sourceMap: true
-        }),
+        // new UglifyJsPlugin({
+        //     sourceMap: true
+        // }),
         new ExtractTextPlugin({
             filename: '../css/style.css'
         })

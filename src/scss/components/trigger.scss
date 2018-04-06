@@ -24,7 +24,7 @@
     &.-active .trigger{
         &_line.-first {
             top: 40%;
-            transform: rotate(45deg);
+            transform: rotate(45deg) scaleX(1.4);
         }
         &_line.-second {
             top: 40%;
@@ -32,7 +32,11 @@
         }
         &_line.-third {
             top: 40%;
-            transform: rotate(-45deg);
+            transform: rotate(-45deg) scaleX(1.4);
         }
+    }
+    &:hover,
+    &:focus {
+        outline: none;
     }
 }

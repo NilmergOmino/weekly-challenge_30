@@ -19,7 +19,7 @@ $('#trigger-menu').on('click', function(){
 $(document).ready(function(){
     $('._js-anchor').on('click', function(event){
         $('#menu').removeClass('-toggle');
-        $('#trigger-menu').toggleClass('-active');
+        $('#trigger-menu').removeClass('-active');
         let target = this.hash.slice(1),
             hash = this.hash,
             targetTop = $('#'+target).offset().top;
